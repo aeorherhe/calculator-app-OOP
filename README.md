@@ -12,8 +12,8 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Solution URL: [solution](https://github.com/aeorherhe/launch-countdown-timer-react.git)
-- Live Site URL: [live site](https://aeorherhe-countdown-timer.netlify.app)
+- Solution URL: [solution](https://github.com/aeorherhe/calculator-app-OOP.git)
+- Live Site URL: [live site](https://aeorherhe-calculator-app-oop.netlify.app)
 
 ### Built with
 

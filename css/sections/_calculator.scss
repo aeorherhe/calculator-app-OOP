@@ -51,14 +51,14 @@
 .calc-keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.25rem;
   background-color: var(--toggle-bg);
-  padding: 1.2rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
 
   button {
     @include boxShadow(var(--grayish-orange-shadow));
-    padding: 0.75rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     border: none;
     background-color: var(--grayish-orange);
@@ -67,6 +67,15 @@
     cursor: pointer;
     &:hover {
       background-color: var(--grayish-orange-hover);
+    }
+  }
+
+  @media (min-width: 45rem) {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    button {
+      padding: 1.25rem;
+      font-size: 1.75rem;
     }
   }
 
