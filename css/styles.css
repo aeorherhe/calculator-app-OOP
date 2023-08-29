@@ -229,8 +229,20 @@ p {
   font-size: 1.25rem;
   opacity: 0.75;
   max-width: 20ch;
-  max-height: 2ch;
+  max-height: 3ch;
   overflow: hidden;
+}
+@media (min-width: 45rem) {
+  .calc-result-dashboard {
+    height: 7rem;
+    padding: 1.5rem;
+  }
+  .calc-result-dashboard .curr-operation {
+    font-size: 2.5rem;
+  }
+  .calc-result-dashboard .prev-operation {
+    font-size: 1.5rem;
+  }
 }
 
 .calc-keys {

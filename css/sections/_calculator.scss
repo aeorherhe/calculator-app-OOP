@@ -43,8 +43,19 @@
     font-size: 1.25rem;
     opacity: 0.75;
     max-width: 20ch;
-    max-height: 2ch;
+    max-height: 3ch;
     overflow: hidden;
+  }
+
+  @media (min-width: 45rem) {
+    height: 7rem;
+    padding: 1.5rem;
+    .curr-operation {
+      font-size: 2.5rem;
+    }
+    .prev-operation {
+      font-size: 1.5rem;
+    }
   }
 }
 
