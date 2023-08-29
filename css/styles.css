@@ -70,7 +70,7 @@ body button {
 }
 
 .main {
-  width: 90vw;
+  width: 95vw;
   max-width: 35rem;
   text-align: center;
 }
@@ -255,7 +255,7 @@ p {
 }
 .calc-keys button {
   box-shadow: 0px 5px 1px 0px var(--grayish-orange-shadow);
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 0.5rem;
   border: none;
   background-color: var(--grayish-orange);
