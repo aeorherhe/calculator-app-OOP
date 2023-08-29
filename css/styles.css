@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+.theme-1 {
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-bg: hsl(225, 21%, 49%);
+  --key-bg-hover: hsl(225, 25%, 69%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --red: hsl(6, 63%, 50%);
+  --red-hover: hsl(6, 51%, 61%);
+  --red-shadow: hsl(6, 70%, 34%);
+  --grayish-orange: hsl(30, 25%, 89%);
+  --grayish-orange-hover: hsla(0, 0%, 100%);
+  --grayish-orange-shadow: hsl(27, 8%, 72%);
+  --text: hsl(221, 14%, 31%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.theme-2 {
+  --main-bg: hsl(0, 0%, 90%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+  --key-bg: hsl(185, 42%, 37%);
+  --key-bg-hover: hsla(185, 89%, 52%, 0.5);
+  --key-shadow: hsl(185, 58%, 25%);
+  --red: hsl(25, 98%, 40%);
+  --red-hover: hsl(25, 84%, 60%);
+  --red-shadow: hsl(25, 99%, 27%);
+  --grayish-orange: hsl(45, 7%, 89%);
+  --grayish-orange-hover: hsla(0, 0%, 100%, 0.9);
+  --grayish-orange-shadow: hsl(35, 11%, 61%);
+  --text: hsl(60, 10%, 19%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.theme-3 {
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+  --key-bg: hsl(281, 89%, 26%);
+  --key-bg-hover: hsl(285, 82%, 46%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --red: hsl(176, 100%, 44%);
+  --red-hover: hsl(177, 92%, 70%);
+  --red-shadow: hsl(177, 92%, 70%);
+  --grayish-orange: hsl(268, 47%, 21%);
+  --grayish-orange-hover: hsla(268, 72%, 53%, 0.8);
+  --grayish-orange-shadow: hsl(290, 70%, 36%);
+  --text: hsl(52, 100%, 62%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--main-bg);
+}
+body button {
+  font-family: "League Spartan";
+}
+
+.main {
+  width: 90vw;
+  max-width: 40rem;
+  text-align: center;
+}
+
+/***************
+ Project Styles
+***************/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  text-transform: capitalize;
+  margin: 1rem 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+@media (max-width: 45rem) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+.btn {
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  background-color: #7857ff;
+}
+.btn.btn-grey {
+  background-color: #303b5a;
+}
+.btn.btn-green {
+  background-color: hsl(166, 100%, 37%);
+}
+.btn.btn-red {
+  background-color: #ce6c4e;
+}
+.btn.btn-purple {
+  background-color: #7857ff;
+}
+
+.themes-stn {
+  display: flex;
+  align-items: center;
+  flex-direction: _;
+  gap: 1rem;
+  justify-content: center;
+}
+.themes-stn > p {
+  align-self: flex-end;
+}
+
+.themes-ctn {
+  display: flex;
+  align-items: center;
+  flex-direction: _;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.theme-balls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: _;
+  gap: 0.25rem;
+  justify-content: center;
+  width: 4.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--toggle-bg);
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.theme-balls .theme-ball,
+.theme-balls .ball {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.theme-balls .ball {
+  background-color: var(--red);
+  position: absolute;
+  transform: translateX(-110%);
+}
+
+.calculator {
+  padding: 2rem;
+  width: 100%;
+}
+
+.calc-header {
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0.75rem 0;
+}
+.calc-header > p {
+  align-self: flex-end;
+}
+
+.calc-result-dashboard {
+  background-color: var(--screen-bg);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  height: 5rem;
+  color: var(--text);
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.calc-result-dashboard .curr-operation {
+  font-size: 1.75rem;
+  max-width: 20ch;
+  max-height: 1ch;
+}
+.calc-result-dashboard .prev-operation {
+  font-size: 1.25rem;
+  opacity: 0.75;
+  max-width: 20ch;
+  max-height: 2ch;
+  overflow: hidden;
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: var(--toggle-bg);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+.calc-keys button {
+  box-shadow: 0px 5px 1px 0px var(--grayish-orange-shadow);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--grayish-orange);
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.calc-keys button:hover {
+  background-color: var(--grayish-orange-hover);
+}
+.calc-keys .reset-btn {
+  grid-column: 1/-3;
+}
+.calc-keys .equals-btn {
+  box-shadow: 0px 5px 1px 0px var(--red-shadow);
+  background-color: var(--red);
+  color: var(--white);
+  grid-column: 3/-1;
+}
+.calc-keys .equals-btn:hover {
+  background-color: var(--red-hover);
+}
+.calc-keys .delete-btn,
+.calc-keys .reset-btn {
+  box-shadow: 0px 5px 1px 0px var(--key-shadow);
+  background-color: var(--key-bg);
+  color: var(--white);
+}
+.calc-keys .delete-btn:hover,
+.calc-keys .reset-btn:hover {
+  background-color: var(--key-bg-hover);
+}
+
+.theme-1 .calc-header,
+.theme-1 .calc-result-dashboard {
+  color: var(--white);
+}
+
+.my-profile {
+  align-self: self-end;
+  align-items: center;
+  background-color: #303b5a;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  font-size: 1rem;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0.75rem;
+  text-align: center;
+  width: 100%;
+}
+
+.my-profile > a {
+  white-space: normal;
+  cursor: pointer;
+  color: hsl(39, 100%, 56%);
+  text-decoration: none;
+}
+
+.my-profile-icons a {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 45rem) {
+  .my-profile {
+    margin-top: 5rem;
+    font-size: 0.9rem;
+  }
+  .my-profile-icons a:first-of-type,
+  .my-profile-icons a:last-of-type {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

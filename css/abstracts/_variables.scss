@@ -1,0 +1,89 @@
+//   /* general variables */
+$shadow-1: 0 0 5px rgb(250, 234, 230);
+$shadow-2: 0px 5px 1px 0px var(--grayish-orange-shadow);
+$transition: all 0.3s linear;
+$transition-2: all 0.5s ease-in-out;
+$line-1: 2px solid rgba(116, 108, 113, 0.5);
+$line-2: 2px solid rgba(223, 81, 19, 0.5);
+$line-3: 2px solid rgba(9, 145, 141, 0.5);
+
+// colors
+$White: hsl(0, 0%, 100%);
+$Dark: #303b5a;
+$Persian-blue: #2421ca00;
+$black: #0f172a;
+$bg-body: hsl(13, 100%, 96%);
+$Light-Gray: hsl(0, 0%, 80%);
+$Light-slate-blue: #7857ff;
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Light-lavender: hsl(241, 100%, 89%);
+
+// this project variables
+
+// theme 1
+.theme-1 {
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  // keys
+  --key-bg: hsl(225, 21%, 49%);
+  --key-bg-hover: hsl(225, 25%, 69%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --red: hsl(6, 63%, 50%);
+  --red-hover: hsl(6, 51%, 61%);
+  --red-shadow: hsl(6, 70%, 34%);
+  --grayish-orange: hsl(30, 25%, 89%);
+  --grayish-orange-hover: hsla(0, 0%, 100%);
+  --grayish-orange-shadow: hsl(27, 8%, 72%);
+
+  // text
+  --text: hsl(221, 14%, 31%);
+  --white: hsl(0, 0%, 100%);
+}
+
+// theme 2
+.theme-2 {
+  --main-bg: hsl(0, 0%, 90%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  // keys
+  --key-bg: hsl(185, 42%, 37%);
+  --key-bg-hover: hsla(185, 89%, 52%, 0.5);
+  --key-shadow: hsl(185, 58%, 25%);
+  --red: hsl(25, 98%, 40%);
+  --red-hover: hsl(25, 84%, 60%);
+  --red-shadow: hsl(25, 99%, 27%);
+  --grayish-orange: hsl(45, 7%, 89%);
+  --grayish-orange-hover: hsla(0, 0%, 100%, 0.9);
+  --grayish-orange-shadow: hsl(35, 11%, 61%);
+
+  // text
+  --text: hsl(60, 10%, 19%);
+  --white: hsl(0, 0%, 100%);
+}
+
+// theme 3
+.theme-3 {
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  // keys
+  --key-bg: hsl(281, 89%, 26%);
+  --key-bg-hover: hsl(285, 82%, 46%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --red: hsl(176, 100%, 44%);
+  --red-hover: hsl(177, 92%, 70%);
+  --red-shadow: hsl(177, 92%, 70%);
+  --grayish-orange: hsl(268, 47%, 21%);
+  --grayish-orange-hover: hsla(268, 72%, 53%, 0.8);
+  --grayish-orange-shadow: hsl(290, 70%, 36%);
+
+  // text
+  --text: hsl(52, 100%, 62%);
+  --white: hsl(0, 0%, 100%);
+}

@@ -1,0 +1,42 @@
+// Global styles
+@use "../abstracts/variables" as *;
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  text-transform: capitalize;
+  margin: 1rem 0;
+  display: inline-block;
+  white-space: nowrap;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+@media (max-width: 45rem) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

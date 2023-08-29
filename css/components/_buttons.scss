@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: $White;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  background-color: $Light-slate-blue;
+  &.btn-grey {
+    background-color: #303b5a;
+  }
+  &.btn-green {
+    background-color: $Green-teal;
+  }
+  &.btn-red {
+    background-color: #ce6c4e;
+  }
+  &.btn-purple {
+    background-color: #7857ff;
+  }
+}

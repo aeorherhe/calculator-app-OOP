@@ -1,0 +1,35 @@
+@use "../base/index" as *;
+
+.themes-stn {
+  @include flex(center, _, 1rem, center);
+  > p {
+    align-self: flex-end;
+  }
+}
+
+.themes-ctn {
+  @include flex(center, _, 1rem, center);
+}
+
+.theme-balls {
+  position: relative;
+  @include flex(center, _, 0.25rem, center);
+  width: 4.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--toggle-bg);
+  margin: 0 0.5rem;
+  cursor: pointer;
+  .theme-ball,
+  .ball {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  .ball {
+    background-color: var(--red);
+    position: absolute;
+    transform: translateX(-110%);
+  }
+}

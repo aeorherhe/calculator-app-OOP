@@ -1,0 +1,103 @@
+@use "../base/index.scss" as *;
+
+.calculator {
+  padding: 2rem;
+  width: 100%;
+}
+
+.calc-header {
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0.75rem 0;
+  > p {
+    align-self: flex-end;
+  }
+}
+
+.calc-result-dashboard {
+  background-color: var(--screen-bg);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  height: 5rem;
+  color: var(--text);
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  .curr-operation {
+    font-size: 1.75rem;
+    max-width: 20ch;
+    max-height: 1ch;
+  }
+
+  .prev-operation {
+    font-size: 1.25rem;
+    opacity: 0.75;
+    max-width: 20ch;
+    max-height: 2ch;
+    overflow: hidden;
+  }
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: var(--toggle-bg);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+
+  button {
+    @include boxShadow(var(--grayish-orange-shadow));
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--grayish-orange);
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--grayish-orange-hover);
+    }
+  }
+
+  .reset-btn {
+    grid-column: 1 / -3;
+  }
+
+  .equals-btn {
+    @include boxShadow(var(--red-shadow));
+    background-color: var(--red);
+    color: var(--white);
+    grid-column: 3 / -1;
+    &:hover {
+      background-color: var(--red-hover);
+    }
+  }
+
+  .delete-btn,
+  .reset-btn {
+    @include boxShadow(var(--key-shadow));
+    background-color: var(--key-bg);
+    color: var(--white);
+    &:hover {
+      background-color: var(--key-bg-hover);
+    }
+  }
+}
+
+.theme-1 {
+  .calc-header,
+  .calc-result-dashboard {
+    color: var(--white);
+  }
+}
